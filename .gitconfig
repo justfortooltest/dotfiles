@@ -1,0 +1,7 @@
+[credential]
+	helper = osxkeychain
+[user]
+	name = Lluvio
+	email = caotousir@gmail.com
+[push]
+	default = matching

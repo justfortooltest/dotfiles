@@ -6,7 +6,6 @@
 let mapleader = ','
 set encoding=utf-8
 
-
 " 鼠标可以复制到剪贴板
 set mouse=v
 
@@ -74,7 +73,7 @@ Plugin 'mattn/emmet-vim'
 
 Plugin 'Townk/vim-autoclose'
 
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 Plugin 'tpope/vim-surround'
 
@@ -87,6 +86,10 @@ Plugin 'scrooloose/syntastic'
 Plugin 'hynek/vim-python-pep8-indent'
 
 Plugin 'fatih/vim-go'
+
+Plugin 'suan/vim-instant-markdown'
+
+Plugin 'justinmk/vim-gtfo'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -205,11 +208,9 @@ if has('conceal')
 endif
 
 
-" VIM AIRLINE
+" AIRLINE
 
 set laststatus=2
-
-" airline theme
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
@@ -227,13 +228,6 @@ let g:airline_theme='tomorrow'
 " Tomorrow
 
 colorscheme Tomorrow-Night-Bright
-
-if has('gui_running')
-  set background=light
-else
-  " set background=dark
-  set background=light
-endif
 
 syntax enable
 
@@ -306,9 +300,9 @@ nmap <silent> <leader>sv :so $MYVIMRC<CR>
 " for macvim
 if has("gui_running")
   set go=aAce  " remove toolbar
-  " For Mac
-  " set transparency=30
-  " set guifont=Monaco\ for\ Powerline:h13
+  "set transparency=30
+  " set guifont=Monaco:h13
+  set guifont=Monaco\ for\ Powerline:h13
   set showtabline=2
   set columns=140
   set lines=40
@@ -339,6 +333,8 @@ endfun
 
 au BufWritePre * :call TrimWhitespace()
 " au BufWritePre * normal gg=G
-au BufRead,BufNewFile *.vue set filetype=javascript
+au BufRead,BufNewFile *.vue set filetype=html
 autocmd BufNewFile,BufRead *.json set ft=javascript
+
+"在.zshrc中加入 stty stop undef, ctrl + s变为保存
 noremap <silent> <C-S> :update<CR>
