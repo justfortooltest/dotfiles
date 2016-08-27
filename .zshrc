@@ -89,7 +89,8 @@ export LC_ALL=en_US.UTF-8
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 
-#alias for cnpm
+#alias
 alias cnpm="npm --registry=https://registry.npm.taobao.org"
+alias axel="axel -n 10"
 
 export EDITOR='vim'
