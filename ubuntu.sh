@@ -9,6 +9,9 @@ function doIt() {
 		--exclude "macports.sh" \
 		--exclude "README.md" \
 		--exclude "LICENSE-MIT.txt" \
+		--exclude ".gitignore" \
+		--exclude ".idea" \
+		--exclude ".hammerspoon" \
 		-avh --no-perms . ~;
   zsh;
 	source ~/.zshrc;
@@ -24,4 +27,3 @@ else
 	fi;
 fi;
 unset doIt;
-
