@@ -4,7 +4,7 @@ function doIt() {
 	rsync --exclude ".git/" \
 		--exclude ".DS_Store" \
 		--exclude "macOS.sh" \
-		--exclude "bootstrap.sh" \
+		--exclude "ubuntu.sh" \
 		--exclude "macports.sh" \
 		--exclude "README.md" \
 		--exclude "LICENSE-MIT.txt" \
@@ -42,10 +42,10 @@ defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
 # Use scroll gesture with the Ctrl (^) modifier key to zoom
-defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
-defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
+# defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
+# defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
 # Follow the keyboard focus while zoomed in
-defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
+# defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
 
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
