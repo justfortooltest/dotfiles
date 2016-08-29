@@ -42,7 +42,8 @@ end
 -- 移动窗口至Space
 for i = 1, 9 do
   hs.hotkey.bind(hyperShift, tostring(i), function()
-    allSpaces = spaces.query()
+    mainSID =  spaces.mainScreenUUID()
+    allSpaces = spaces.spacesByScreenUUID()[mainSID]
     spaceCalu = #allSpaces + 1
     -- 检查Space是否存在
     if i > #allSpaces then hs.alert("Space "..i.." 不存在") return end
