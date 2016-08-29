@@ -12,12 +12,11 @@
 -- (http://github.com/asmagill/hammerspoon_asm.undocumented)
 spaces = require("hs._asm.undocumented.spaces")
 
-local function setSpaceMenu()
+local function setSpaceMenu(index)
   if statusMenu == nil then
     statusMenu = hs.menubar.new()
   end
-  currentSpace = tostring(spaces.currentSpace())
-  statusMenu:setTitle(currentSpace)
+  statusMenu:setTitle(index)
 end
 
 
@@ -27,14 +26,16 @@ local menubar = hs.menubar.new()
 -- there are total 9 spaces to change
 for i = 1, 9 do
   hs.hotkey.bind(hyper, tostring(i), function()
-    allSpaces = spaces.query()
+    -- mainScreen spaces
+    mainSID =  spaces.mainScreenUUID()
+    allSpaces = spaces.spacesByScreenUUID()[mainSID]
     spaceCalu = #allSpaces + 1
     -- 防止crash
     if i > #allSpaces then hs.alert("Space "..i.." 不存在") return end
     if spaces.activeSpace() == allSpaces[spaceCalu - i] then return end
 
     spaces.changeToSpace(allSpaces[spaceCalu - i], false)
-    setSpaceMenu()
+    setSpaceMenu(i)
   end)
 end
 
@@ -60,4 +61,4 @@ hs.hotkey.bind(hyper, 'c', function()
 end)
 
 -- init
-setSpaceMenu()
+setSpaceMenu(1)
