@@ -11,6 +11,7 @@ function doIt() {
 		--exclude ".gitignore" \
 		--exclude ".config" \
 		--exclude ".idea" \
+		--exclude "other" \
 		-avh --no-perms . ~;
   zsh;
 	source ~/.zshrc;

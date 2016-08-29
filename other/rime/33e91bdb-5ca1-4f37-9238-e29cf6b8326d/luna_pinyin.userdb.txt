@@ -1,0 +1,120 @@
+# Rime user dictionary
+#@/db_name	luna_pinyin.userdb
+#@/db_type	userdb
+#@/rime_version	1.2.9
+#@/tick	143
+#@/user_id	33e91bdb-5ca1-4f37-9238-e29cf6b8326d
+ai 	愛	c=2 d=1.85586 t=143
+ai qi yi 	愛奇異	c=1 d=0.904837 t=143
+ao gu 	傲骨	c=0 d=0.0873716 t=143
+ao gu xian qi 	傲骨賢妻	c=7 d=6.3585 t=143
+bai du 	百度	c=1 d=1.03315 t=143
+bai du yun 	百度暈	c=1 d=0.918512 t=143
+bai nian 	百年	c=0 d=0.0782705 t=143
+bai nian gu du 	百年孤獨	c=2 d=1.58915 t=143
+ben lai 	本來	c=1 d=0.690734 t=143
+bu cuo 	不錯	c=1 d=0.878095 t=143
+bu shi 	不是	c=1 d=0.937067 t=143
+chao 	巢	c=1 d=1 t=143
+cheng gong 	成功	c=1 d=0.826959 t=143
+da shu 	大叔	c=1 d=0.913931 t=143
+dao hang 	導航	c=0 d=0.083527 t=143
+de 	的	c=5 d=3.75993 t=143
+di yi ji 	第一季	c=3 d=2.77511 t=143
+dong xi 	東西	c=1 d=0.873716 t=143
+dou ban 	豆瓣	c=1 d=0.774916 t=143
+feng 	丰	c=1 d=0.99005 t=143
+feng chao 	丰超	c=1 d=0.995012 t=143
+gang gan 	槓桿	c=2 d=1.57043 t=143
+gao fen 	高分	c=2 d=1.54985 t=143
+gen 	跟	c=3 d=2.761 t=143
+gong nv 	宮女	c=3 d=2.77484 t=143
+gu du 	孤獨	c=0 d=0.0782705 t=143
+guan yu 	關於	c=1 d=0.860708 t=143
+ha ha ha ha 	哈哈哈哈	c=1 d=0.843665 t=143
+hao ping 	好評	c=0 d=0.0733447 t=143
+hao ping ru chao 	好評如潮	c=1 d=0.737123 t=143
+he 	和	c=2 d=1.58122 t=143
+hen hou 	很厚	c=1 d=0.729789 t=143
+hen kuai 	很快	c=1 d=0.99005 t=143
+hen xiang 	很像	c=2 d=1.59711 t=143
+hen xin 	很新	c=1 d=0.733447 t=143
+hui shi 	回事	c=1 d=0.980199 t=143
+huo zhe 	或者	c=1 d=0.810584 t=143
+ji 	記	c=0 d=0.0873716 t=143
+ji ji 	幾集	c=1 d=0.937067 t=143
+jie jue 	解決	c=1 d=0.683861 t=143
+jiu 	就	c=2 d=1.3596 t=143
+jiu suan 	就算	c=1 d=0.932394 t=143
+kai qi 	開啓	c=1 d=0.891366 t=143
+ke yi 	可以	c=1 d=0.965605 t=143
+kuai le 	快了	c=1 d=0.985112 t=143
+ma 	嘛	c=1 d=0.882497 t=143
+mu si lin 	穆斯林	c=3 d=2.21588 t=143
+na 	哪	c=1 d=0.99005 t=143
+ni 	你	c=1 d=0.67368 t=143
+ni hao 	你好	c=1 d=0.701173 t=143
+ni jiu 	你就	c=1 d=0.677057 t=143
+niao chao 	鳥巢	c=1 d=0.985112 t=143
+o 	哦	c=1 d=0.680451 t=143
+ou yang 	歐陽	c=2 d=1.41291 t=143
+pian duan 	片段	c=3 d=2.78472 t=143
+pin yin 	拼音	c=1 d=0.951229 t=143
+qi yi 	奇異	c=0 d=0.0900325 t=143
+qiang lie 	強烈	c=1 d=0.918512 t=143
+qu 	去	c=1 d=0.970446 t=143
+re wu 	熱舞	c=3 d=2.77083 t=143
+ren shi 	人士	c=1 d=0.831104 t=143
+ru chao 	如潮	c=0 d=0.0733447 t=143
+ru guo 	如果	c=1 d=0.88692 t=143
+shang 	上	c=1 d=0.904837 t=143
+shen jing 	神經	c=1 d=0.965605 t=143
+sheng zhi 	升職	c=0 d=0.0873716 t=143
+sheng zhi ji 	升職記	c=2 d=1.81517 t=143
+shi 	是	c=2 d=1.79484 t=143
+shi ge 	是個	c=1 d=0.687289 t=143
+shi pin 	視頻	c=0 d=0.0878095 t=143
+shi yong 	使用	c=1 d=0.97531 t=143
+shu 	術	c=1 d=0.822835 t=143
+si kao 	思考	c=1 d=0.818731 t=143
+si wei 	思維	c=0 d=0.083527 t=143
+si wei dao hang 	思維導航	c=1 d=0.839457 t=143
+tai 	太	c=1 d=0.980199 t=143
+tai zi fei 	太子妃	c=2 d=1.80611 t=143
+tan ge 	探戈	c=2 d=1.85781 t=143
+teng xun 	騰訊	c=0 d=0.0878095 t=143
+teng xun shi pin 	騰訊視頻	c=1 d=0.882497 t=143
+tian ai 	天崖	c=0 d=0.0900325 t=143
+tian jia 	添加	c=2 d=1.98012 t=143
+tiao 	跳	c=1 d=0.970446 t=143
+tong 	痛	c=1 d=0.970446 t=143
+wen hua 	文化	c=0 d=0.0843665 t=143
+wu bi 	五筆	c=7 d=6.45747 t=143
+xian qi 	賢妻	c=0 d=0.0873716 t=143
+xiang qu 	想去	c=1 d=0.694197 t=143
+xiao shuo 	小說	c=1 d=0.726149 t=143
+ye 	也	c=1 d=0.960789 t=143
+ye xia 	腋下	c=1 d=0.960789 t=143
+yi ben 	一本	c=1 d=0.722527 t=143
+yi ji 	一集	c=1 d=0.995012 t=143
+yi li 	毅力	c=1 d=0.67032 t=143
+yi shi 	一試	c=1 d=0.923116 t=143
+ying pan 	硬盤	c=2 d=1.80153 t=143
+ying pan wen hua 	硬盤文化	c=1 d=0.847894 t=143
+yong hu 	用戶	c=1 d=0.955997 t=143
+you 	有	c=1 d=0.932394 t=143
+you ku 	優酷	c=2 d=1.4492 t=143
+yun 	暈	c=0 d=0.0913931 t=143
+yun 	雲	c=1 d=0.946485 t=143
+zai 	在	c=1 d=0.985112 t=143
+zai xian 	在線	c=1 d=0.900325 t=143
+zan li 	贊禮	c=1 d=0.718924 t=143
+zang li 	葬禮	c=2 d=1.51922 t=143
+zen me 	怎麼	c=1 d=0.97531 t=143
+zhang 	張	c=0 d=0.0900325 t=143
+zhang tian ai 	張天崖	c=2 d=1.8466 t=143
+zhe 	這	c=1 d=0.856415 t=143
+zhe ben 	這本	c=1 d=0.794534 t=143
+zhe ge 	這個	c=2 d=1.61328 t=143
+zhong guo 	中國	c=1 d=0.873716 t=143
+zi mu 	字幕	c=1 d=1 t=143
