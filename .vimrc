@@ -225,11 +225,11 @@ let g:airline#extensions#tabline#buffer_nr_show = 1
 
 let g:airline_theme='tomorrow'
 
-" Tomorrow
-
-colorscheme Tomorrow-Night-Bright
+" Vim-Colorshemes
 
 syntax enable
+
+colorscheme Tomorrow-Night
 
 " NERDTree
 
@@ -302,6 +302,10 @@ if has("gui_running")
   set go=aAce  " remove toolbar
   "set transparency=30
   " set guifont=Monaco:h13
+  "
+  set background=light
+  colorscheme Solarized
+
   set guifont=Monaco\ for\ Powerline:h13
   set showtabline=2
   set columns=140
