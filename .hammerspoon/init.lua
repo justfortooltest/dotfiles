@@ -4,6 +4,7 @@ require "modules/windows"
 require "modules/space"
 -- require "modules/screen"
 require "modules/system"
+require "modules/utils"
 
 hs.hotkey.bind(hyper, '/', function()
   hs.alert('Hello World')

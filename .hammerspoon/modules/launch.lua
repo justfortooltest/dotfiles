@@ -7,8 +7,6 @@ local key2App = {
   f = 'Finder',
   g = 'Google Chrome',
   h = 'Haroopad',
-  r = 'ReadEver',
-  s = 'System Preferences'
 }
 
 for key, app in pairs(key2App) do

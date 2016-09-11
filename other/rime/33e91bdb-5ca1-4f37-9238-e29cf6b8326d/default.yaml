@@ -143,6 +143,7 @@ ascii_composer:
   good_old_caps_lock: false
   switch_key:
     Shift_L: noop
+    Shift_R: noop
     Control_L: noop
     Caps_Lock: commit_code
     Eisu_toggle: clear
