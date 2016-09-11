@@ -13,10 +13,11 @@
 spaces = require("hs._asm.undocumented.spaces")
 
 local function setSpaceMenu(index)
-  if statusMenu == nil then
-    statusMenu = hs.menubar.new()
-  end
-  statusMenu:setTitle(index)
+  -- if statusMenu == nil then
+  --   statusMenu = hs.menubar.new()
+  -- end
+  -- statusMenu:setTitle(index)
+  hs.alert("Space "..index)
 end
 
 
