@@ -97,3 +97,6 @@ export EDITOR='vim'
 
 export NVM_DIR="/home/lluvio/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# alias tmuxinator =>  mux
+source $HOME/.bin/tmuxinator.zsh

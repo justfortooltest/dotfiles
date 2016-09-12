@@ -18,7 +18,7 @@ hotkey.bind(hyper, ']', function() window.focusedWindow():moveToUnit(layout.righ
 hotkey.bind(hyper, 'f', function() window.focusedWindow():moveToUnit(layout.maximized) end)
 
 -- hyper + shift + left move the current window to the left monitor
-hotkey.bind(hyperShift, 'left', function()
+hotkey.bind(hyper, 'left', function()
     local w = hs.window.focusedWindow()
     if not w then
         return
@@ -30,7 +30,7 @@ hotkey.bind(hyperShift, 'left', function()
 end)
 
 -- hyper + shift + right move the current window to the right monitor
-hotkey.bind(hyperShift, 'right', function()
+hotkey.bind(hyper, 'right', function()
     local w = hs.window.focusedWindow()
     if not w then
         return
