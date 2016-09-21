@@ -5,7 +5,6 @@ function doIt() {
 		--exclude ".DS_Store" \
 		--exclude "macOS.sh" \
 		--exclude "ubuntu.sh" \
-		--exclude "macports.sh" \
 		--exclude "README.md" \
 		--exclude "LICENSE-MIT.txt" \
 		--exclude ".gitignore" \
