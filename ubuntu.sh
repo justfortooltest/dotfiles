@@ -7,11 +7,8 @@ function doIt() {
 		--exclude "macOS.sh" \
 		--exclude "ubuntu.sh" \
 		--exclude "README.md" \
-		--exclude "LICENSE-MIT.txt" \
-		--exclude ".gitignore" \
-		--exclude ".idea" \
-		--exclude ".hammerspoon" \
-		--exclude "other" \
+		--exclude "OTHER" \
+		--exclude "MACOS" \
 		-avh --no-perms . ~;
   zsh;
 	source ~/.zshrc;

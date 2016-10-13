@@ -3,15 +3,14 @@
 function doIt() {
 	rsync --exclude ".git/" \
 		--exclude ".DS_Store" \
+		--exclude ".gitignore" \
 		--exclude "macOS.sh" \
 		--exclude "ubuntu.sh" \
 		--exclude "README.md" \
-		--exclude "LICENSE-MIT.txt" \
-		--exclude ".gitignore" \
-		--exclude ".config" \
-		--exclude ".idea" \
-		--exclude "other" \
+		--exclude "OTHER" \
+		--include "MACOS" \
 		-avh --no-perms . ~;
+  mv MACOS/.* ~;
   zsh;
 	source ~/.zshrc;
 }
