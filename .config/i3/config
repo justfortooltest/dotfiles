@@ -158,3 +158,17 @@ bar {
         status_command i3status
         tray_output primary
 }
+
+# xrand
+
+set $mode_external_pos External screen is on (l)eft or (r)ight of the internal one?
+
+mode "$mode_external_pos" {
+    bindsym r exec xrandr --output HDMI1 --primary --auto --output VGA1 --right-of HDMI1
+    bindsym l exec xrandr --output HDMI1 --primary --auto --output VGA1 --left-of HDMI1
+  # back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+Shift+s mode "$mode_external_pos"
+
