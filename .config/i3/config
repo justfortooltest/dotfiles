@@ -13,20 +13,53 @@
 # set $mod Mod1
 # set $sup Mod4
 set $mod Mod4
-# Fancy names for workspaces
-set $w1 1: Dev
-set $w2 2: View
-set $w3 3: Note
-set $w4 4: Chat
-set $w5 5: File
-set $w6 6: Log
-set $w7 7: Web
-set $w8 8: Term
-set $w9 9: Book
-set $w10 10: Temp
 
-# Layout
-exec --no-startup-id i3-msg 'workspace $w1; append_layout ~/.config/i3/workspace-1.json'
+# Displays
+set $OUTPUT1 HDMI1
+set $OUTPUT2 VGA1
+
+
+# Fancy names for workspaces
+set $w1 1:Dev
+set $w2 2:View
+set $w3 3:Note
+set $w4 4:Chat
+set $w5 5:File
+set $w6 6:Log
+set $w7 7:Web
+set $w8 8:Term
+set $w9 9:Book
+set $w10 10:Temp
+
+# Workspaces inner display
+workspace "$w1" output $OUTPUT1
+workspace "$w3" output $OUTPUT1
+workspace "$w4" output $OUTPUT1
+workspace "$w5" output $OUTPUT1
+workspace "$w6" output $OUTPUT1
+workspace "$w7" output $OUTPUT1
+workspace "$w8" output $OUTPUT1
+workspace "$w9" output $OUTPUT1
+workspace "$w2" output $OUTPUT2
+
+# Layout, when application start move to which workspace. Not computer start!
+assign [class="(?i)(jetbrains)"] $w1
+assign [class="(?i)(atom|typora)"] $w3
+assign [class="(?i)(chromium)"] $w7
+assign [class="(?i)(libprs500)"] $w9
+
+# 有些程序不起作用
+exec --no-startup-id i3-msg 'workspace $w1; exec gnome-terminal'
+exec --no-startup-id i3-msg 'workspace $w2; exec gnome-terminal'
+exec --no-startup-id i3-msg 'workspace $w3; exec atom'
+# exec --no-startup-id i3-msg 'workspace $w4; exec wine-qqintl'
+exec --no-startup-id i3-msg 'workspace $w6; exec ss-qt5'
+# exec --no-startup-id i3-msg 'workspace $w7; exec chromium-browser'
+exec --no-startup-id i3-msg 'workspace $w8; exec gnome-terminal'
+# exec --no-startup-id i3-msg 'workspace $w9; exec calibre'
+
+# fixed move workspace error
+exec --no-startup-id chromium-browser
 
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -179,11 +212,15 @@ bar {
 set $mode_external_pos External screen is on (l)eft or (r)ight of the internal one?
 
 mode "$mode_external_pos" {
-    bindsym r exec xrandr --output HDMI1 --primary --auto --output VGA1 --right-of HDMI1
-    bindsym l exec xrandr --output HDMI1 --primary --auto --output VGA1 --left-of HDMI1
+    bindsym r exec xrandr --output $OUTPUT1 --primary --auto --output $OUTPUT2 --right-of $OUTPUT1
+    bindsym l exec xrandr --output $OUTPUT1 --primary --auto --output $OUTPUT2 --left-of $OUTPUT1
   # back to normal: Enter or Escape
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
+
 bindsym $mod+Shift+s mode "$mode_external_pos"
+
+exec --no-startup-id xrandr --output $OUTPUT1 --primary --auto --output $OUTPUT2 --left-of $OUTPUT1
+
 

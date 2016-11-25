@@ -1,7 +1,7 @@
 {
   // stacked split container with 1 children
   "layout": "stacked",
-  "percent": 0.6,
+  "percent": 1,
   "type": "con",
   "nodes": [
     {
@@ -9,7 +9,7 @@
       "type": "con",
       "swallows": [
         {
-          "class": "^Chromium Web Browser$"
+          "class": "^Atom$"
         }
       ]
     }
