@@ -45,7 +45,7 @@ workspace "$w2" output $OUTPUT2
 # Layout, when application start move to which workspace. Not computer start!
 assign [class="(?i)(jetbrains)"] $w1
 assign [class="(?i)(atom|typora)"] $w3
-assign [class="(?i)(chromium)"] $w7
+assign [class="(?i)(firefox)"] $w7
 assign [class="(?i)(libprs500)"] $w9
 
 # 有些程序不起作用
@@ -59,7 +59,7 @@ exec --no-startup-id i3-msg 'workspace $w8; exec gnome-terminal'
 # exec --no-startup-id i3-msg 'workspace $w9; exec calibre'
 
 # fixed move workspace error
-exec --no-startup-id chromium-browser
+exec --no-startup-id firefox
 exec --no-startup-id ss-qt5
 
 # nutstore
