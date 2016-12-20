@@ -100,3 +100,7 @@ export NVM_DIR="/home/lluvio/.nvm"
 
 # alias tmuxinator =>  mux
 source $HOME/.bin/tmuxinator.zsh
+
+# 定义宏目录
+export TEXMFHOME="~/.texmf"
+
