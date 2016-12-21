@@ -10,6 +10,16 @@
 (require 'evil)
 (evil-mode t)
 
+;; remove default evil-toggle-key C-z, manually setup later
+(setq evil-toggle-key "")
+
+;; remove all keybindings from insert-state keymap, use emacs-state when editing
+(setcdr evil-insert-state-map nil)
+
+;; ESC to switch back normal-state
+(define-key evil-insert-state-map [escape] 'evil-normal-state)
+
+
 (eval-after-load "org"
   '(require 'ox-md nil t))
 
