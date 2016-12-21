@@ -19,6 +19,18 @@
 ;; ESC to switch back normal-state
 (define-key evil-insert-state-map [escape] 'evil-normal-state)
 
+(setq
+ backup-by-copying t    ;自动备份
+ delete-old-versions t ; 自动删除旧的备份文件
+ kept-new-versions 10   ; 保留最近的10个备份文件
+ kept-old-versions 2   ; 保留最早的2个备份文件
+ version-control t    ; 多次备份
+ ;; 把生成的备份文件放到统一的一个目录,而不在在文件当前目录生成好多 ~ #的文件
+ ;; 如果你编辑某个文件时 后悔了想恢复成以前的一个版本 你可以到这个目录下
+ ;; 找到备份的版本
+ backup-directory-alist `((".*" . "~/.emacs.d/cache/backup_files/")) ;
+ auto-save-file-name-transforms `((".*" "~/.emacs.d/cache/backup_files/" t))
+ auto-save-list-file-prefix   "~/.emacs.d/cache/backup_files/saves-")
 
 (eval-after-load "org"
   '(require 'ox-md nil t))
