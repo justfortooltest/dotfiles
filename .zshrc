@@ -92,9 +92,9 @@ export LC_ALL=en_US.UTF-8
 #alias
 alias cnpm="npm --registry=https://registry.npm.taobao.org"
 alias axel="axel -n 10"
-alias vim="emacs -nw"
+alias vi="emacs -nw"
 
-export EDITOR='vim'
+export EDITOR='emacs -nw'
 
 export NVM_DIR="/home/lluvio/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
