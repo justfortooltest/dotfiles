@@ -55,8 +55,14 @@ plugins=(git osx z history safe-rm)
 
 # Go
 export GOPATH="$HOME/Public/gosrc"
+
+# Swift
+export SWIFTPATH="/opt/swift/usr/bin"
+
+# Custom Command
 export PUBLICKPATH="$HOME/.bin"
-export PATH="$PUBLICKPATH:$GOPATH/bin:$HOME/.composer/vendor/bin:/opt/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+
+export PATH="$SWIFTPATH:$PUBLICKPATH:$GOPATH/bin:$HOME/.composer/vendor/bin:/opt/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
