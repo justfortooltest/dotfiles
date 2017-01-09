@@ -53,17 +53,16 @@ exec --no-startup-id i3-msg 'workspace $w1; exec gnome-terminal'
 exec --no-startup-id i3-msg 'workspace $w2; exec gnome-terminal'
 exec --no-startup-id i3-msg 'workspace $w3; exec atom'
 # exec --no-startup-id i3-msg 'workspace $w4; exec wine-qqintl'
-exec --no-startup-id i3-msg 'workspace $w6; exec ss-qt5'
 # exec --no-startup-id i3-msg 'workspace $w7; exec chromium-browser'
 exec --no-startup-id i3-msg 'workspace $w8; exec gnome-terminal'
 # exec --no-startup-id i3-msg 'workspace $w9; exec calibre'
 
 # fixed move workspace error
 exec --no-startup-id firefox
-exec --no-startup-id ss-qt5
 
-# nutstore
+# nutstore & xx-net
 exec --no-startup-id nohup ~/.nutstore/dist/bin/nutstore-pydaemon.py >/dev/null 2>&1 &
+exec --no-startup-id nohup ~/XX/start &
 
 
 # Font for window titles. Will also be used by the bar unless a different font
