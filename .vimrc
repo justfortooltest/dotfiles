@@ -38,6 +38,14 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
+ " yark and paste
+vmap <Leader>y "+y
+vmap <Leader>d "+d
+nmap <Leader>p "+p
+nmap <Leader>P "+P
+vmap <Leader>p "+p
+vmap <Leader>P "+P
+
 set nocompatible              " be iMproved, required
 filetype off
 
