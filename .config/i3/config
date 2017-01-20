@@ -51,14 +51,14 @@ assign [class="(?i)(libprs500)"] $w9
 # 有些程序不起作用
 exec --no-startup-id i3-msg 'workspace $w1; exec gnome-terminal'
 exec --no-startup-id i3-msg 'workspace $w2; exec gnome-terminal'
-exec --no-startup-id i3-msg 'workspace $w3; exec atom'
+# exec --no-startup-id i3-msg 'workspace $w3; exec atom'
 # exec --no-startup-id i3-msg 'workspace $w4; exec wine-qqintl'
 # exec --no-startup-id i3-msg 'workspace $w7; exec chromium-browser'
 exec --no-startup-id i3-msg 'workspace $w8; exec gnome-terminal'
 # exec --no-startup-id i3-msg 'workspace $w9; exec calibre'
 
 # fixed move workspace error
-exec --no-startup-id firefox
+# exec --no-startup-id firefox
 
 # nutstore & xx-net
 exec --no-startup-id nohup ~/.nutstore/dist/bin/nutstore-pydaemon.py >/dev/null 2>&1 &
