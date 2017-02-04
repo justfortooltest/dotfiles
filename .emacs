@@ -3,21 +3,24 @@
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
+
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
 (package-initialize)
 
-(require 'evil)
-(evil-mode t)
+(windmove-default-keybindings)
+
+; (require 'evil)
+; (evil-mode t)
 
 ;; remove default evil-toggle-key C-z, manually setup later
-(setq evil-toggle-key "")
+; (setq evil-toggle-key "")
 
 ;; remove all keybindings from insert-state keymap, use emacs-state when editing
-(setcdr evil-insert-state-map nil)
+; (setcdr evil-insert-state-map nil)
 
 ;; ESC to switch back normal-state
-(define-key evil-insert-state-map [escape] 'evil-normal-state)
+; (define-key evil-insert-state-map [escape] 'evil-normal-state)
 
 (setq
  backup-by-copying t    ;自动备份
