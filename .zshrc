@@ -101,7 +101,7 @@ alias axel="axel -n 10"
 alias vi="emacs -nw"
 alias _aria2c="aria2c -c -s10 -k1M -x10"
 
-export EDITOR='emacs -nw'
+export EDITOR='vim'
 
 export NVM_DIR="/home/lluvio/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
