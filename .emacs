@@ -13,6 +13,10 @@
 ;; make buffer switch command auto suggestions, also for find-file command
 (ido-mode 1)
 
+(global-set-key [?\C-h] 'delete-backward-char)
+(global-set-key [?\C-x ?h] 'help-command)
+                         ;; overrides mark-whole-buffer')')
+
 ; (require 'evil)
 ; (evil-mode t)
 
