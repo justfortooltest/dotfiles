@@ -10,6 +10,9 @@
 
 (windmove-default-keybindings)
 
+;; make buffer switch command auto suggestions, also for find-file command
+(ido-mode 1)
+
 ; (require 'evil)
 ; (evil-mode t)
 
