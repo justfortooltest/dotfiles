@@ -15,8 +15,8 @@
 set $mod Mod4
 
 # Displays
-set $OUTPUT1 HDMI1
-set $OUTPUT2 VGA1
+set $OUTPUT1 VGA-1
+set $OUTPUT1 VGA-2
 
 
 # Fancy names for workspaces
