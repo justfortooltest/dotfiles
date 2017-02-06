@@ -224,4 +224,5 @@ mode "$mode_external_pos" {
 
 bindsym $mod+Shift+s mode "$mode_external_pos"
 
-exec --no-startup-id xrandr --output $OUTPUT1 --primary --auto --output $OUTPUT2 --left-of $OUTPUT1
+# if mode_external_pos fail, try exec this
+# exec --no-startup-id xrandr --output $OUTPUT1 --primary --auto --output $OUTPUT2 --left-of $OUTPUT1
