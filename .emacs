@@ -8,10 +8,21 @@
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
 (package-initialize)
 
+;; shift with arrow key move cursor point in another window
 (windmove-default-keybindings)
+
+;; UTF-8 as default encoding
+(set-language-environment "UTF-8")
 
 ;; make buffer switch command auto suggestions, also for find-file command
 (ido-mode 1)
+
+; keep a list of recently opened files
+(recentf-mode 1)
+
+;; save/restore opened files and windows config
+(desktop-save-mode 1) ; 0 for off
+
 
 (global-set-key [?\C-h] 'delete-backward-char)
 (global-set-key [?\C-x ?h] 'help-command)
