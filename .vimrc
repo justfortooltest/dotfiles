@@ -6,8 +6,11 @@
 let mapleader = ','
 set encoding=utf-8
 
-" 鼠标可以复制到剪贴板
+" 使鼠标选择不进入可视模式，带行号选择
 set mouse=v
+
+" y,p 直接与系统剪贴板交换
+set clipboard=unnamed
 
 " 总是显示状态栏
 set laststatus=2
