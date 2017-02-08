@@ -1,7 +1,3 @@
-" ===
-" Base config
-" ===
-
 " I suspect you are setting the mapleader after the plugins get loaded
 let mapleader = ','
 set encoding=utf-8
@@ -33,9 +29,9 @@ set hlsearch " 高亮
 set incsearch " 即时搜索
 set ignorecase "忽略大小写
 
-" Show partial commands in status line and
-" Selected characters/lines in visual mode
-set showcmd
+" 显示命令补全 First tab will complete to longest string and show the the match list, then second tab will complete to first full match and open the wildmenu.
+set wildmenu
+set wildmode=longest:list,full
 
 " 设置tab为4个space
 set tabstop=2
@@ -67,21 +63,13 @@ Plugin 'flazz/vim-colorschemes'
 
 Plugin 'scrooloose/nerdtree'
 
-Plugin 'jistr/vim-nerdtree-tabs'
-
 Plugin 'tomtom/tcomment_vim'
-
-Plugin 'mattn/emmet-vim'
 
 Plugin 'Townk/vim-autoclose'
 
 Plugin 'tpope/vim-surround'
 
 Plugin 'majutsushi/tagbar'
-
-Plugin 'hynek/vim-python-pep8-indent'
-
-Plugin 'suan/vim-instant-markdown'
 
 Plugin 'justinmk/vim-gtfo'
 
@@ -116,14 +104,13 @@ hi User4 ctermbg=0 ctermfg=2
 hi User5 ctermbg=0 ctermfg=3
 
 " NERDTree
-
 map <C-e> :NERDTreeToggle<CR>
-
-let g:nerdtree_tabs_open_on_gui_startup=0
+" let g:nerdtree_tabs_open_on_gui_startup=0
 
 "------------------
 "" Useful Functions
 "------------------
+
 "" easier navigation between split windows
 " Use ctrl-[hjkl] to select the active split!
 nmap <silent> <c-k> :wincmd k<CR>
@@ -141,10 +128,8 @@ cmap w!! %!sudo tee >/dev/null %
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
-"" 个人开发
-
-" noremap <c-h> :tabprevious<cr>
-" noremap <c-l> :tabnext<cr>
+" 在可视模式下显示使用的命令, 必须 set compatible
+set showcmd
 
 " for macvim
 if has("gui_running")
@@ -153,17 +138,7 @@ if has("gui_running")
   set guifont=Monaco\ for\ Powerline:h13
   set columns=140
   set lines=40
-  map <D-1> 1gt
-  map <D-2> 2gt
-  map <D-3> 3gt
-  map <D-4> 4gt
-  map <D-5> 5gt
-  map <D-6> 6gt
-  map <D-7> 7gt
-  map <D-8> 8gt
-  map <D-9> 9gt
-  map <D-0> :tablast<CR>
-
+  " status line color
   hi User1 guifg=#eea040 guibg=#222222
   hi User2 guifg=#dd3333 guibg=#222222
   hi User3 guifg=#ff66ff guibg=#222222
@@ -171,7 +146,7 @@ if has("gui_running")
   hi User5 guifg=#eeee40 guibg=#222222
 endif
 
-""" 清除尾随空格
+" 清除尾随空格
 fun! TrimWhitespace()
   let l:save_cursor = getpos('.')
   %s/\s\+$//e
