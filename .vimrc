@@ -27,9 +27,6 @@ set backspace=indent,eol,start
 "line number
 set number
 
-" 开启折叠(缩进折叠)
-set foldmethod=indent
-
 "" 搜索设置
 set hlsearch " 高亮
 set incsearch " 即时搜索
