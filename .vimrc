@@ -2,6 +2,9 @@
 let mapleader = ','
 set encoding=utf-8
 
+" 打开文件类型检查
+filetype plugin indent on
+
 " 使鼠标选择不进入可视模式，带行号选择
 set mouse=v
 
@@ -49,43 +52,28 @@ nmap <Leader>P "+P
 vmap <Leader>p "+p
 vmap <Leader>P "+P
 
-set nocompatible              " be iMproved, required
-filetype off
+call plug#begin('~/.vim/plugged')
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+Plug 'flazz/vim-colorschemes'
 
-" let Vundle manage Vundle, required
+Plug 'scrooloose/nerdtree'
 
-Plugin 'VundleVim/Vundle.vim'
+Plug 'tomtom/tcomment_vim'
 
-Plugin 'flazz/vim-colorschemes'
-
-Plugin 'scrooloose/nerdtree'
-
-Plugin 'tomtom/tcomment_vim'
-
-Plugin 'Townk/vim-autoclose'
+Plug 'Townk/vim-autoclose'
 
 " <leader> <leader> j/k/w/s/f
-Plugin 'easymotion/vim-easymotion'
+Plug 'easymotion/vim-easymotion'
 
-Plugin 'tpope/vim-surround'
+Plug 'tpope/vim-surround'
 
-Plugin 'majutsushi/tagbar'
+Plug 'majutsushi/tagbar'
 
-Plugin 'justinmk/vim-gtfo'
+Plug 'justinmk/vim-gtfo'
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-filetype on
+call plug#end()
 
 " Vim-Colorshemes
-
 syntax enable
 let g:solarized_termcolors=256
 set background=dark
@@ -116,8 +104,7 @@ map <C-e> :NERDTreeToggle<CR>
 "" Useful Functions
 "------------------
 
-"" easier navigation between split windows
-" Use ctrl-[hjkl] to select the active split!
+" easier navigation between split windows Use ctrl-[hjkl] to select the active split!
 nmap <silent> <c-k> :wincmd k<CR>
 nmap <silent> <c-j> :wincmd j<CR>
 nmap <silent> <c-h> :wincmd h<CR>
