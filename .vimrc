@@ -5,6 +5,9 @@ set encoding=utf-8
 " 使鼠标选择不进入可视模式，带行号选择
 set mouse=v
 
+" highlight current line
+set cursorline
+
 " y,p 直接与系统剪贴板交换
 set clipboard=unnamed
 
@@ -67,6 +70,9 @@ Plugin 'tomtom/tcomment_vim'
 
 Plugin 'Townk/vim-autoclose'
 
+" <leader> <leader> j/k/w/s/f
+Plugin 'easymotion/vim-easymotion'
+
 Plugin 'tpope/vim-surround'
 
 Plugin 'majutsushi/tagbar'
@@ -105,7 +111,6 @@ hi User5 ctermbg=0 ctermfg=3
 
 " NERDTree
 map <C-e> :NERDTreeToggle<CR>
-" let g:nerdtree_tabs_open_on_gui_startup=0
 
 "------------------
 "" Useful Functions
