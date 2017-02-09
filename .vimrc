@@ -120,6 +120,16 @@ nmap <silent> <leader>sv :so $MYVIMRC<CR>
 " 在可视模式下显示使用的命令, 必须 set compatible
 set showcmd
 
+" Mimic Emacs Line Editing in Insert Mode Only
+inoremap <C-A> <Home>
+inoremap <C-E> <End>
+inoremap <C-P> <Up>
+inoremap <C-N> <Down>
+inoremap <C-B> <Left>
+inoremap <C-F> <Right>
+inoremap <C-K> <Esc>lDa
+inoremap <C-U> <Esc>d0xi
+
 " for macvim
 if has("gui_running")
   set go=aAce  " remove toolbar
