@@ -1,7 +1,7 @@
 require "modules/hotkey"
 -- require "modules/launch"
 require "modules/windows"
-require "modules/space"
+require "modules/caffeine"
 -- require "modules/screen"
 require "modules/system"
 require "modules/utils"
