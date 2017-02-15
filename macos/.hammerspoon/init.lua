@@ -1,18 +1,26 @@
 require "modules/hotkey"
--- require "modules/launch"
 require "modules/windows"
 require "modules/caffeine"
--- require "modules/screen"
+require "modules/app-switcher"
 require "modules/system"
 require "modules/utils"
 
-hs.hotkey.bind(hyper, '/', function()
-  hs.alert('Hello World')
-end)
+-- standalone_modifiers by karabiner ( fn => f18 )
+setupApplicationLauncherModalHotkey({}, "f18")
+registerApplicationHotkey("f", "finder")
+registerApplicationHotkey("w", "微信")
+registerApplicationHotkey("g", "google chrome")
+registerApplicationHotkey("q", "qq")
+registerApplicationHotkey("e", "evernote")
+registerApplicationHotkey("s", "safari")
+registerApplicationHotkey("t", "终端")
 
-hs.hotkey.bind({"cmd", "alt", "ctrl"}, "W", function()
-  hs.notify.new({title="Hammerspoon", informativeText="Hello World"}):send()
-end)
+function applicationWatcher(appName, eventType, appObject)
+  print(appName)
+end
+
+local appWatcher = hs.application.watcher.new(applicationWatcher)
+appWatcher:start()
 
 -- reload
 hs.hotkey.bind(hyper, 'escape', function()
