@@ -1,1 +1,2 @@
-# tmuxinator
+# like percol
+port install peco
