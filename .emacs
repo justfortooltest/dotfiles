@@ -28,17 +28,13 @@
 (global-set-key [?\C-x ?h] 'help-command)
                          ;; overrides mark-whole-buffer')')
 
-; (require 'evil)
-; (evil-mode t)
-
-;; remove default evil-toggle-key C-z, manually setup later
-; (setq evil-toggle-key "")
-
-;; remove all keybindings from insert-state keymap, use emacs-state when editing
-; (setcdr evil-insert-state-map nil)
-
-;; ESC to switch back normal-state
-; (define-key evil-insert-state-map [escape] 'evil-normal-state)
+(require 'smex) ; Not needed if you use package.el
+(smex-initialize) ; Can be omitted. This might cause a (minimal) delay
+                  ; when Smex is auto-initialized on its first run.')
+(global-set-key (kbd "M-x") 'smex)
+(global-set-key (kbd "M-X") 'smex-major-mode-commands)
+;; This is your old M-x.
+(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
 (setq
  backup-by-copying t    ;自动备份
