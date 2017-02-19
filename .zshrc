@@ -112,19 +112,6 @@ source $HOME/.bin/tmuxinator.zsh
 # 定义宏目录
 export TEXMFHOME="~/.texmf"
 
-# bind ctrl-r
-function peco-select-history() {
-    local tac
-    if which tac > /dev/null; then
-        tac="tac"
-    else
-        tac="tail -r"
-    fi
-    BUFFER=$(\history -n 1 | \
-        eval $tac | \
-        peco --query "$LBUFFER")
-    CURSOR=$#BUFFER
-    zle clear-screen
-}
-zle -N peco-select-history
-bindkey '^r' peco-select-history
+# fzf
+source $HOME/.config/zsh/fzf-completions.zsh
+source $HOME/.config/zsh/fzf-key-bindings.zsh
