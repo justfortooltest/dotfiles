@@ -1,2 +1,2 @@
 # like percol
-port install peco
+port install peco tig
