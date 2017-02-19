@@ -59,10 +59,13 @@ export GOPATH="$HOME/Public/gosrc"
 # Swift
 export SWIFTPATH="/opt/swift/usr/bin"
 
+# Macports
+MACPORTS_PYTHON="/opt/local/Library/Frameworks/Python.framework/Versions/Current/bin/"
+
 # Custom Command
 export PUBLICKPATH="$HOME/.bin"
 
-export PATH="$SWIFTPATH:$PUBLICKPATH:$GOPATH/bin:$HOME/.composer/vendor/bin:/opt/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="$MACPORTS_PYTHON:$SWIFTPATH:$PUBLICKPATH:$GOPATH/bin:$HOME/.composer/vendor/bin:/opt/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
