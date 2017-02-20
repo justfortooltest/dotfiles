@@ -10,16 +10,18 @@ function macInit() {
 }
 
 function doIt() {
-  operator=$(uname)
+  operator=`echo $(uname) | tr "A-Z" "a-z"`
   if [ $operator = "Linux" ] ; then
     echo -e "current operator ${GREEN} $operator ${NC}"
-    rsync --exclude-from="$PWD/other/exclude-linux.list" \
+    rsync --exclude-from="$PWD/other/exclude-$operator.list" \
       -avh --no-perms . ~;
+    ln -s $PWD/.bin/${operator}/* ~/.bin/
   else
     # macos
     echo -e "current operator ${GREEN} $operator ${NC}"
-    rsync --exclude-from="$PWD/other/exclude-mac.list" \
+    rsync --exclude-from="$PWD/other/exclude-$operator.list" \
       -avh --no-perms . ~;
+    ln -s $PWD/.bin/${operator}/* ~/.bin/
     macInit;
   fi
 }
@@ -34,4 +36,6 @@ else
 		doIt;
 	fi;
 fi;
+
 unset doIt;
+unset macInit;

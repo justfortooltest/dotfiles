@@ -6,6 +6,8 @@
 README.md
 other
 
+.config/i3
+.config/karabiner
 # these just for mac
 .hammerspoon
 
