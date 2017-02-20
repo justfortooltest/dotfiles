@@ -1,2 +1,2 @@
 # like percol
-port install peco tig
+port install peco tig ranger htop
