@@ -1,24 +1,25 @@
-## Permission
+## ready
+
+> dotfiles for linux and mac
+
+### mac
 
 ```sh
-sudo chmod 755 ./bootstrap.sh ./macOS.sh
+`xcode-select --install`
+
+# then
+./other/install-common.sh
+./sync.sh
 ```
 
-## Start
+optionally, there are installation steps in `./ohter/macports.sh`
 
-`xcode-select --install` then
+### linux
 
-`./ubuntu.sh` or `./macOS.sh`
+```sh
+./other/install-common.sh
+./sync.sh
+````
 
+optionally, there are installation steps in `./ohter/install-ubuntu.sh`
 
-## Ubuntu
-
-i3wm 
-
-```shell
-export PRIMARY="HDMI1"
-export EXT1="VGA1"
-# EXT2="DP-1"
-#
-xrandr --output $PRIMARY --primary --auto --output $EXT1 --left-of $PRIMARY
-```

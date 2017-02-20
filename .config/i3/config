@@ -14,10 +14,9 @@
 # set $sup Mod4
 set $mod Mod4
 
-# Displays
+# Displays, If you want use linux on two monitor
 set $OUTPUT1 VGA-1
 set $OUTPUT1 VGA-2
-
 
 # Fancy names for workspaces
 set $w1 1:Dev

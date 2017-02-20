@@ -1,0 +1,11 @@
+# common
+.git
+.DS_Store
+.gitignore
+*.sh
+README.md
+other
+
+# these just for mac
+.hammerspoon
+
