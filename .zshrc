@@ -98,11 +98,19 @@ export LC_ALL=en_US.UTF-8
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 
-#alias
+# alias
 alias cnpm="npm --registry=https://registry.npm.taobao.org"
 alias axel="axel -n 10"
 alias _aria2c="aria2c -c -s10 -k1M -x10"
 alias peco="peco --initial-filter=Fuzzy"
+
+# fix binary system cross
+# operator=$(uname)
+# if [ $operator = "Linux" ] ; then
+#   alias fzf="fzf-linux"
+# else
+#   alias fzf="fzf-mac"
+# fi
 
 export EDITOR='vim'
 
