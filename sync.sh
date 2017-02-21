@@ -21,7 +21,7 @@ function doSync() {
 function doIt() {
   # darwin or linux
   operator=`echo $(uname) | tr "A-Z" "a-z"`
-  if [ $operator = "Linux" ] ; then
+  if [ $operator = "linux" ] ; then
     doSync $operator;
   else
     doSync $operator;
