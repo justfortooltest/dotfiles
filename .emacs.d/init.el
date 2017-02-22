@@ -1,15 +1,16 @@
-
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
 
-(require 'package)
-(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
-(package-initialize)
+(add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
+(require 'init-elpa)      ;; Machinery for installing required packages
 
 ;; shift with arrow key move cursor point in another window
 (windmove-default-keybindings)
+
+;; window numbering
+(window-numbering-mode 1)
 
 ;; UTF-8 as default encoding
 (set-language-environment "UTF-8")
@@ -30,13 +31,13 @@
 (global-set-key [?\C-x ?h] 'help-command)
                          ;; overrides mark-whole-buffer')')
 
-(require 'smex) ; Not needed if you use package.el
-(smex-initialize) ; Can be omitted. This might cause a (minimal) delay
-                  ; when Smex is auto-initialized on its first run.')
-(global-set-key (kbd "M-x") 'smex)
-(global-set-key (kbd "M-X") 'smex-major-mode-commands)
-;; This is your old M-x.
-(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
+; (require 'smex) ; Not needed if you use package.el
+; (smex-initialize) ; Can be omitted. This might cause a (minimal) delay
+;                   ; when Smex is auto-initialized on its first run.')
+; (global-set-key (kbd "M-x") 'smex)
+; (global-set-key (kbd "M-X") 'smex-major-mode-commands)
+; ;; This is your old M-x.
+; (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
 (setq
  backup-by-copying t    ;自动备份
@@ -89,3 +90,4 @@
     (perl . t)
     (C . t)
     ))
+
