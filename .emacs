@@ -23,6 +23,8 @@
 ;; save/restore opened files and windows config
 (desktop-save-mode 1) ; 0 for off
 
+;; window undo redo
+(winner-mode t)
 
 (global-set-key [?\C-h] 'delete-backward-char)
 (global-set-key [?\C-x ?h] 'help-command)
