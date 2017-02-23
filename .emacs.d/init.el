@@ -7,6 +7,7 @@
 (require 'init-site-lisp)
 (require 'init-elpa)      ;; Machinery for installing required packages
 (require 'init-helm)
+(require 'init-avy)
 (require 'init-windows)
 (require 'init-which-key)
 
