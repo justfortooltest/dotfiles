@@ -5,6 +5,7 @@
 
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 (require 'init-elpa)      ;; Machinery for installing required packages
+(require 'init-helm)
 
 ;; shift with arrow key move cursor point in another window
 (windmove-default-keybindings)
@@ -30,8 +31,6 @@
 (global-set-key [?\C-h] 'delete-backward-char)
 (global-set-key [?\C-x ?h] 'help-command)
                          ;; overrides mark-whole-buffer')')
-
-(global-set-key (kbd "M-x") 'helm-M-x)
 
 (setq
  backup-by-copying t    ;自动备份
