@@ -3,15 +3,12 @@
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
 
-(add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
+(add-to-list 'load-path "~/.emacs.d/lisp/")
+(require 'init-site-lisp)
 (require 'init-elpa)      ;; Machinery for installing required packages
 (require 'init-helm)
-
-;; shift with arrow key move cursor point in another window
-(windmove-default-keybindings)
-
-;; window numbering
-(window-numbering-mode 1)
+(require 'init-windows)
+(require 'init-which-key)
 
 ;; UTF-8 as default encoding
 (set-language-environment "UTF-8")
@@ -21,12 +18,6 @@
 
 ; keep a list of recently opened files
 (recentf-mode 1)
-
-;; save/restore opened files and windows config
-(desktop-save-mode 1) ; 0 for off
-
-;; window undo redo
-(winner-mode t)
 
 (global-set-key [?\C-h] 'delete-backward-char)
 (global-set-key [?\C-x ?h] 'help-command)

@@ -21,6 +21,6 @@
 (or (file-exists-p package-user-dir)
     (package-refresh-contents))
 
-(ensure-package-installed 'helm 'window-numbering) ;  --> (nil nil) if iedit and magit are already installed
+(ensure-package-installed 'helm) ;  --> (nil nil) if iedit and magit are already installed
 
 (provide 'init-elpa)
