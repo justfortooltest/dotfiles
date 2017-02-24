@@ -3,6 +3,9 @@
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
 
+;; UTF-8 as default encoding
+(set-language-environment "UTF-8")
+
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 (require 'init-site-lisp)
 (require 'init-elpa)      ;; Machinery for installing required packages
@@ -10,9 +13,11 @@
 (require 'init-avy)
 (require 'init-windows)
 (require 'init-which-key)
+(require 'init-theme)
 
-;; UTF-8 as default encoding
-(set-language-environment "UTF-8")
+
+;;关闭欢迎界面
+(setq inhibit-startup-message t)
 
 ;; make buffer switch command auto suggestions, also for find-file command
 (ido-mode 1)
