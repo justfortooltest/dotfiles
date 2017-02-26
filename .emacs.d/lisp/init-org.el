@@ -3,7 +3,7 @@
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
 (setq org-log-done t
-      ; org-edit-src-content-indentation 0
+      org-startup-truncated nil ;; 在 org mode 模式下段落随着窗口大小换行
       )
 
 ;; Note: 如果需要导出 epub/mobi...可以先导出markdown然后通过pandoc转换

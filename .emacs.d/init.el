@@ -4,7 +4,7 @@
 ;; You may delete these explanatory comments.
 
 ;; gc-cons-threshold 指定了垃圾回收前允许有多少字节的consing
-(setq gc-cons-threshold 100000000)
+(setq gc-cons-threshold 200000000)
 
 ;; UTF-8 as default encoding
 (set-language-environment "UTF-8")
