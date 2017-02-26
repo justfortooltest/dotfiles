@@ -11,8 +11,9 @@
 (dolist (charset '(kana han symbol cjk-misc bopomofo))
   (set-fontset-font (frame-parameter nil 'font)
                     charset
-                    (font-spec :family "PingFang SC" :size 14)))
+                    (font-spec :family "PingFang SC" :size 16)))
 
 ;; Note: you can chang "PingFang SC" to "Microsoft YaHei" or other fonts'))'))')
+;; 中英字体 使用不同的字号, 实现中英文对齐
 
 (provide 'init-theme)
