@@ -18,3 +18,4 @@
 (require 'init-theme)
 (require 'init-windows)
 (require 'init-which-key)
+(require 'init-abbrev)

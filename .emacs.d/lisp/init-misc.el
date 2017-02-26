@@ -1,3 +1,6 @@
+;; turn on highlight matching brackets when cursor is on one
+(show-paren-mode 1)
+
 ;; 显示行数和列数
 (column-number-mode 1)
 

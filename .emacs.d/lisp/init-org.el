@@ -15,15 +15,15 @@
 (define-key global-map "\C-cc" 'org-capture)
 
 (setq org-capture-templates
-      '(("t" "Todo" entry (file+headline "~/Org/gtd.org" "Tasks")
+      '(("t" "Todo" entry (file+headline "~/org/gtd.org" "Tasks")
          "* TODO %?\n %i\n \n \n \n \n")
-        ("i" "Idea" entry (file+headline "~/Org/notes.org" "Ideas")
+        ("i" "Idea" entry (file+headline "~/org/notes.org" "Ideas")
          "* %?\n Caught on %T\n %i\n \n \n \n \n")
-        ("m" "Movie" entry (file+headline "~/Org/notes.org" "Entertainments")
+        ("m" "Movie" entry (file+headline "~/org/notes.org" "Entertainments")
          "* %?\n Watched on %T\n %i\n \n \n \n \n")
-        ("n" "Note" entry (file+headline "~/Org/notes.org" "Notes")
+        ("n" "Note" entry (file+headline "~/org/notes.org" "Notes")
          "* %?\n Taken at %T\n %i\n \n \n \n \n")
-        ("j" "Journal" entry (file+datetree "~/Org/journal.org")
+        ("j" "Journal" entry (file+datetree "~/org/journal.org")
          "** %?\n Logged at %T\n %i\n \n \n \n \n")))
 
 (provide 'init-org)
