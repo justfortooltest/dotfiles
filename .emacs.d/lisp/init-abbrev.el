@@ -1,6 +1,6 @@
 ;; Tips:
 ;; 1. expand abbrev by c-x '
-;; 2. c-q 可以不使用abbrev
+;; 2. 在开启 addbre-mode 后c-q 可以不避免补全
 ;; 3. I put “z” in the beginning of my abbrevs. This way, i don't have to worry about clash with short words that i don't want to expand.
 
 ;; abbrev-mode
