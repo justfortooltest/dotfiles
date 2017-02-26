@@ -11,9 +11,10 @@
 (if (file-exists-p abbrev-file-name)
   (quietly-read-abbrev-file))       ;; reads the abbreviations file
 
-(dolist (hook '(erc-mode-hook
-                 emacs-lisp-mode-hook
-                 text-mode-hook))
-  (add-hook hook (lambda () (abbrev-mode 1))))
+; 不自动开启 abbre-mode，而是通过 c-x ' 补全
+; (dolist (hook '(erc-mode-hook
+;                  emacs-lisp-mode-hook
+;                  text-mode-hook))
+;   (add-hook hook (lambda () (abbrev-mode 1))))
 
 (provide 'init-abbrev)
