@@ -1,8 +1,15 @@
-(eval-after-load "org"
-  '(require 'ox-md nil t))
+(add-to-list 'auto-mode-alist '("\\.org\\’" . org-mode))
+(global-set-key "\C-cl" 'org-store-link)
+(global-set-key "\C-ca" 'org-agenda)
+(global-set-key "\C-cb" 'org-iswitchb)
+(setq org-log-done t
+      ; org-edit-src-content-indentation 0
+      )
 
 ;; Note: 如果需要导出 epub/mobi...可以先导出markdown然后通过pandoc转换
 ;; 先转换成 epub, 然后可以通过 calibre 转换你想要的格式
+(eval-after-load "org"
+  '(require 'ox-md nil t))
 
 ;; Capture, org 文件夹可以使用云同步
 (define-key global-map "\C-cc" 'org-capture)

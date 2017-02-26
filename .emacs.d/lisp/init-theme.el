@@ -1,4 +1,5 @@
-(require 'spacemacs-light-theme)
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/spacemacs-theme")
+(load-theme 'spacemacs-light t)
 
 ;; -----------------------------------------------------------------------------
 ;; setting font for mac system
