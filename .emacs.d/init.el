@@ -10,12 +10,12 @@
 (set-language-environment "UTF-8")
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 (require 'init-site-lisp)
+(require 'init-theme)
 (require 'init-elpa)      ;; Machinery for installing required packages
 (require 'init-avy)
 (require 'init-helm)
 (require 'init-misc)
 (require 'init-org)
-(require 'init-theme)
 (require 'init-windows)
 (require 'init-which-key)
 (require 'init-abbrev)

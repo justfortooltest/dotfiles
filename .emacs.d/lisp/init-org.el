@@ -2,8 +2,10 @@
 (global-set-key "\C-cl" 'org-store-link)
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
-(setq org-log-done t
+(setq org-log-done t ;; CLOSED:[timestamp]
       org-startup-truncated nil ;; 在 org mode 模式下段落随着窗口大小换行
+      org-odt-preferred-output-format "doc" ;; 导出 odt 格式为 doc
+      org-tags-column 80 ;; tag 对齐
       )
 
 ;; Note: 如果需要导出 epub/mobi...可以先导出markdown然后通过pandoc转换
@@ -25,5 +27,4 @@
          "* %?\n Taken at %T\n %i\n \n \n \n \n")
         ("j" "Journal" entry (file+datetree "~/org/journal.org")
          "** %?\n Logged at %T\n %i\n \n \n \n \n")))
-
 (provide 'init-org)
