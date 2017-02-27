@@ -5,7 +5,7 @@
 (setq org-log-done t ;; CLOSED:[timestamp]
       org-startup-truncated nil ;; 在 org mode 模式下段落随着窗口大小换行
       org-odt-preferred-output-format "doc" ;; 导出 odt 格式为 doc
-      org-tags-column 80 ;; tag 对齐
+      org-tags-column 80 ;; 设置tags保持多少column, 同level tag 对齐
       )
 
 ;; Note: 如果需要导出 epub/mobi...可以先导出markdown然后通过pandoc转换
