@@ -59,6 +59,8 @@ Plug 'tomtom/tcomment_vim'
 
 Plug 'Townk/vim-autoclose'
 
+Plug 'mattn/emmet-vim'
+
 " <leader> <leader> j/k/w/s/f
 Plug 'easymotion/vim-easymotion'
 
