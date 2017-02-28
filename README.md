@@ -23,3 +23,11 @@ optionally, there are installation steps in `./ohter/macports.sh`
 
 optionally, there are installation steps in `./ohter/install-ubuntu.sh`
 
+
+## vim
+
+vim plugin manager with vim-plug, when you git clone done, run on vim:
+
+```sh
+:PlugInstall
+```
