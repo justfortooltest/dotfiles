@@ -23,6 +23,12 @@
 (setq-default indent-tabs-mode nil
               tab-width 2)
 
+;; make return key also do indent, for current buffer only
+; (electric-indent-local-mode 1)
+
+;; make return key also do indent, globally
+; (electric-indent-mode 1)
+
 ;; 打开大文件时不必警告
 (setq large-file-warning-threshold nil)
 
